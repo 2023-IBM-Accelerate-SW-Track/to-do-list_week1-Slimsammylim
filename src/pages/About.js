@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import "./About.css";
+import slim_profile_pic from "../assets/slim_profile_pic.jpg";
   
 export default class About extends Component {
   render() {
@@ -9,6 +11,7 @@ export default class About extends Component {
             <div className="centered">
               <img 
                 className="profile_image"
+                src = {slim_profile_pic}
                 // Image goes here
                 alt="Profile Pic"
                 ></img>
@@ -16,9 +19,9 @@ export default class About extends Component {
           </div>
           <div className="split right">
             <div className="centered">
-              <div className="name_title">Your Name</div>
+              <div className="name_title">Sam Lim (Slim)</div>
               <div className="brief_description">
-                // Details about you goes here
+                Hi! My name is Slim and I am a rising junior at Rice University majoring in Computer Science. In my free time I enjoy playing volleyball, making ceramics, and rock climbing. 
               </div>
             </div>
           </div>
