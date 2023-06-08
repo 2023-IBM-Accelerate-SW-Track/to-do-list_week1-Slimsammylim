@@ -1,4 +1,4 @@
-import "../pages/Home.css"; // ?? CORRECT?
+import "../pages/Home.css"; 
 import React, { Component } from "react";
 import AddTodo from "../component/AddTodo";
 import Todos from "../component/todos";
@@ -9,7 +9,7 @@ class Home extends Component {
  constructor() {
    super();
    this.state = {
-     todos: [] // ?? CORRECT?
+     todos: [] 
    };
  }
  // the addTodo function simply creates a new array that includes the user submitted todo item and then
@@ -32,7 +32,7 @@ class Home extends Component {
    return (
      <div className="Home">
        <Todos todos={this.state} />
-       <AddTodo addTodo={this.addTodo()} />
+       <AddTodo addTodo={this.addTodo} />
        <h1>Todo's</h1>
      </div>
    );
