@@ -6,7 +6,7 @@ class AddTodo extends Component {
     constructor() {
       super();
       this.state = {
-        // Make an empty list
+        content: "",
       };
     }
     // The handleChange function updates the react state with the new input value provided from the user.
@@ -41,18 +41,18 @@ class AddTodo extends Component {
           <TextField
             label="Add New Item"
             variant="outlined"
-            //onChange={call handleChange here}
-            //value={set the content state here}
+            onChange={this.handleChange}
+            value={this.setState}
           />
           <Button
             style={{ marginLeft: "10px" }}
-            //onClick={call handleSubmit here}
+            onClick={this.handleSubmit}
             variant="contained"
             color="primary"
           >
             Add
           </Button>
-        </div>
+        </div> 
       );
     }
   }
