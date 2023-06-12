@@ -31,7 +31,7 @@ class Home extends Component {
  render() {
    return (
      <div className="Home">
-       <Todos todos={this.state} />
+       <Todos todos={this.state.todos} />
        <AddTodo addTodo={this.addTodo} />
        <h1>Todo's</h1>
      </div>
